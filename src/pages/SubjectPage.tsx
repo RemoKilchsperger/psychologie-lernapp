@@ -9,6 +9,7 @@ import { StudyBrowser, collectStudies } from '../components/StudyBrowser';
 const EntwicklungApp = lazy(() => import('../features/entwicklung/EntwicklungApp'));
 const GeschichteApp = lazy(() => import('../features/geschichte/GeschichteApp'));
 const PersoenlichkeitApp = lazy(() => import('../features/persoenlichkeit/PersoenlichkeitApp'));
+const KognitivApp = lazy(() => import('../features/kognitiv/KognitivApp'));
 
 type Tab = 'theorie' | 'studien' | 'quiz';
 
@@ -33,7 +34,7 @@ export default function SubjectPage() {
   const key = `${semester.slug}/${subject.slug}`;
 
   if (subject.custom) {
-    const App = subject.custom === 'geschichte' ? GeschichteApp : subject.custom === 'persoenlichkeit' ? PersoenlichkeitApp : EntwicklungApp;
+    const App = { entwicklung: EntwicklungApp, geschichte: GeschichteApp, persoenlichkeit: PersoenlichkeitApp, kognitiv: KognitivApp }[subject.custom];
     return (
       <div className="subject" style={{ '--accent': subject.accent } as CSSProperties}>
         <nav className="crumbs">

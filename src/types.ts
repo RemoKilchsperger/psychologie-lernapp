@@ -157,7 +157,7 @@ export interface Subject {
   /** true, solange nur Beispielinhalte enthalten sind */
   placeholder?: boolean;
   /** Eigene Lernumgebung statt der Standard-Fachseite (z.B. 'entwicklung') */
-  custom?: 'entwicklung' | 'geschichte' | 'persoenlichkeit';
+  custom?: 'entwicklung' | 'geschichte' | 'persoenlichkeit' | 'kognitiv';
   sections: TheorySection[];
   quiz: QuizQuestion[];
 }
