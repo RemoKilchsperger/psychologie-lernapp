@@ -14,6 +14,13 @@ import broadbent from './img/broadbent.png';
 import treisman from './img/treisman.png';
 import deutsch from './img/deutsch.png';
 import load from './img/perceptual-load.png';
+import cueing from './img/spatial-cueing.png';
+import soa from './img/cueing-soa.png';
+import merkmale from './img/elementare-merkmale.png';
+import suchfunktionen from './img/suchfunktionen.png';
+import fit from './img/fit.png';
+import wolfe from './img/wolfe-szenen.png';
+import wolfeKontrolle from './img/wolfe-kontrolle.png';
 
 export interface Figure {
   nr: number;
@@ -138,5 +145,61 @@ export const figures: Record<FigureKey, Figure> = {
     title: 'Perceptual Load (Forster & Lavie, 2008)',
     caption: 'Der irrelevante Comic-Distraktor verlangsamt nur bei der einfachen Aufgabe (478 vs. 538 ms, ***); bei der schwierigen nicht (694 vs. 713 ms, n. s.).',
     source: 'Aufm. F. 17',
+  },
+  cueing: {
+    nr: 16,
+    src: cueing,
+    title: 'Spatial Cueing (Posner et al., 1978): Durchgangstypen und RT',
+    caption:
+      'Neutral (zentrales Kreuz), valide (Pfeil zeigt zum Zielort) und invalide (Pfeil zeigt zur Gegenseite); Ablauf Cue → Delay → Test. Valide ≈ 300 ms (Gewinn), neutral ≈ 335 ms (Baseline), invalide ≈ 370 ms (Kosten).',
+    source: 'Aufm. F. 22',
+  },
+  soa: {
+    nr: 17,
+    src: soa,
+    title: 'Nutzen eines validen Cues nach SOA',
+    caption:
+      'Peripherer Cue (orange): Nutzen steigt kurz nach 0 ms, Plateau ≈ 20 ms ab ca. 150 ms SOA → zieht automatisch an. Symbolischer Cue (blau): bis ca. 100 ms kein Nutzen, Plateau erst bei ca. 300 ms → wird willentlich befolgt.',
+    source: 'Aufm. F. 23',
+  },
+  merkmale: {
+    nr: 18,
+    src: merkmale,
+    title: 'Elementare Merkmale',
+    caption:
+      'Farbe, Orientierung, Grösse, Form/Geschlossenheit, Krümmung, 3D-Lage/Schattierung und neu Anzahl: Das abweichende Element springt jeweils ohne Absuchen ins Auge (Pop-out).',
+    source: 'Aufm. F. 26',
+  },
+  suchfunktionen: {
+    nr: 19,
+    src: suchfunktionen,
+    title: 'Suchfunktionen: RT × Set Size',
+    caption:
+      'Merkmalssuche (orange) flach ≈ 450 ms (~0 ms/Objekt); Verbindungssuche (blau) steigt linear: Ziel anwesend (gefüllt) 5–15 ms/Objekt, abwesend (leer) 10–30 ms/Objekt → selbstabbrechende Suche.',
+    source: 'Aufm. F. 29',
+  },
+  fit: {
+    nr: 20,
+    src: fit,
+    title: 'Merkmals-Integrations-Theorie (Treisman & Gelade, 1980)',
+    caption:
+      'Input → Ortskarte; Farb- und Orientierungskarten erfassen Merkmale parallel. Nur am Ort des Aufmerksamkeitsfokus werden die Merkmale (durchgezogene Linien) zur temporären Objektrepräsentation verbunden und mit dem Wiedererkennungs-Netzwerk abgeglichen. Impliziert eine «zufällige» Suche.',
+    source: 'Aufm. F. 30',
+  },
+  wolfe: {
+    nr: 21,
+    src: wolfe,
+    title: 'Suche in realen Szenen (Wolfe et al., 2011)',
+    caption:
+      'Zielwort (z. B. «Wasserhahn») 500 ms → leerer Bildschirm 500 ms → Szene bis zur Antwort. Ziel abwesend 4 ms/Item, anwesend 5 ms/Item (Hauptbereich Set Size 25–85) → extrem effizient.',
+    source: 'Aufm. F. 38',
+  },
+  'wolfe-kontrolle': {
+    nr: 22,
+    src: wolfeKontrolle,
+    title: 'Kontrollanalyse: Singletons vs. alle Treffer',
+    caption:
+      '(A) Mehr Zielinstanzen → kürzere RT, höhere Trefferquote. (B) Singletons insgesamt langsamer, aber gleiche Steigungen (korrekt abwesend 5, Singletons 4, alle Treffer 7 ms/Item).',
+    source: 'Aufm. F. 39',
   },
 };

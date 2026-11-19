@@ -196,12 +196,12 @@ function StudyBox({ block }: { block: Extract<Block, { t: 'study' }> }) {
         )}
       </header>
       <p className="ew-study-method">
-        <span className="ew-label">Vorgehen</span> {block.method}
+        <span className="ew-label">Vorgehen</span> <Rich text={block.method} />
       </p>
       {open ? (
         <>
           <p>
-            <span className="ew-label">Ergebnis</span> {block.result}
+            <span className="ew-label">Ergebnis</span> <Rich text={block.result} />
           </p>
           <p className="ew-takeaway">
             <span className="ew-label">Kernaussage</span> <Rich text={block.takeaway} />

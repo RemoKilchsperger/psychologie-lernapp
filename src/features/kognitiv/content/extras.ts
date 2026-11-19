@@ -44,6 +44,17 @@ export const keyNumbers: KeyNumber[] = [
   { ch: 'aufmerksamkeit', value: '478 vs. 538 ms', text: 'Forster & Lavie (2008): einfache Aufgabe ohne/mit Distraktor (signifikant)', src: 'F. 17' },
   { ch: 'aufmerksamkeit', value: '694 vs. 713 ms', text: 'Forster & Lavie: schwierige Aufgabe ohne/mit Distraktor (n. s.)', src: 'F. 17' },
   { ch: 'aufmerksamkeit', value: '55 / 110 ms', text: 'Lachter et al. (2004): kein Priming bei 55 ms, Priming ab 110 ms (Slippage)', src: 'F. 19–21' },
+  { ch: 'aufmerksamkeit', value: '50 / 40 / 10 %', text: 'Spatial Cueing (Posner et al., 1978): neutral / valide / invalide (Folie; LB: 80/20 % → 4 : 1)', src: 'F. 22; LB S. 57' },
+  { ch: 'aufmerksamkeit', value: '≈ 300 / 335 / 370 ms', text: 'RT valide / neutral (Baseline) / invalide → Gewinn bzw. Kosten (aus Abb. abgelesen)', src: 'F. 22' },
+  { ch: 'aufmerksamkeit', value: '24°', text: 'bis so weit von der Fovea lässt sich Aufmerksamkeit lenken (Posner, Snyder & Davidson, 1980)', src: 'LB S. 58' },
+  { ch: 'aufmerksamkeit', value: '150 vs. 300 ms', text: 'SOA-Plateau (≈ 20 ms Nutzen): peripherer vs. symbolischer Cue; symbolisch bis ca. 100 ms kein Nutzen', src: 'F. 23' },
+  { ch: 'aufmerksamkeit', value: '70–90 ms', text: 'EKP-Effekt bei räumlicher Aufmerksamkeit (inhaltliche Merkmale ca. 200 ms; Mangun et al., 1993)', src: 'LB S. 59–60' },
+  { ch: 'aufmerksamkeit', value: '12–18', text: 'elementare Merkmale, die dem seriellen Flaschenhals entkommen (neu: Anzahl)', src: 'F. 26' },
+  { ch: 'aufmerksamkeit', value: '≈ 400 vs. > 800 ms', text: 'Treisman & Gelade (1980): T unter I und Y vs. T unter I und Z', src: 'LB S. 61' },
+  { ch: 'aufmerksamkeit', value: '≈ 0 ms/Objekt', text: 'Merkmalssuche (flach, ca. 450 ms), Ziel an- und abwesend', src: 'F. 29' },
+  { ch: 'aufmerksamkeit', value: '5–15 / 10–30 ms', text: 'Verbindungssuche pro Objekt: Ziel anwesend / abwesend → selbstabbrechend', src: 'F. 29' },
+  { ch: 'aufmerksamkeit', value: '5 / 4 ms/Item', text: 'Wolfe et al. (2011): reale Szenen, Ziel anwesend / abwesend (Set Size 25–85)', src: 'F. 38' },
+  { ch: 'aufmerksamkeit', value: '5 / 4 / 7 ms/Item', text: 'Kontrollanalyse: korrekt abwesend / Singletons / alle Treffer', src: 'F. 39' },
 ];
 
 export const pitfalls: Pitfall[] = [
@@ -236,6 +247,48 @@ export const pitfalls: Pitfall[] = [
     b: { label: 'Implizit', text: '**Rechtschreib-Bias trotzdem vorhanden** (35 vs. 23 % «fare»).' },
     tipp: 'Semantische Verarbeitung ohne bewusste Erinnerung.',
   },
+  {
+    ch: 'aufmerksamkeit',
+    topic: 'Peripherer vs. symbolischer Cue',
+    a: { label: 'Peripher = exogen', text: 'z. B. **Aufblinken am Zielort**; zieht **automatisch** an, Plateau schon bei **ca. 150 ms** SOA.' },
+    b: { label: 'Symbolisch = endogen', text: 'z. B. **Pfeil in der Mitte**; **willentlich**, bis ca. 100 ms kein Nutzen, Plateau erst bei **ca. 300 ms**.' },
+    tipp: 'Der zentrale Pfeil ist endogen, obwohl er «auf einen Ort zeigt».',
+  },
+  {
+    ch: 'aufmerksamkeit',
+    topic: 'Gewinne und Kosten',
+    a: { label: 'Gewinn', text: '**Neutral − valide**: schnellere RT bei validem Cue.' },
+    b: { label: 'Kosten', text: '**Invalide − neutral**: langsamere RT bei invalidem Cue.' },
+    tipp: 'Immer relativ zur neutralen Baseline – nie valide gegen invalide.',
+  },
+  {
+    ch: 'aufmerksamkeit',
+    topic: 'Prozentangaben im Cueing',
+    a: { label: 'Folie', text: '**50/40/10 %** pro Bedingung (neutral/valide/invalide).' },
+    b: { label: 'Lehrbuch', text: '**80/20 %** erwartete vs. unerwartete Seite innerhalb der Hinweis-Durchgänge.' },
+    tipp: 'Dasselbe Verhältnis 4 : 1 – für die Prüfung gilt die Folie.',
+  },
+  {
+    ch: 'aufmerksamkeit',
+    topic: 'Merkmals- vs. Verbindungssuche',
+    a: { label: 'Merkmalssuche', text: 'Ziel durch **ein einzigartiges Merkmal** definiert → Pop-out, **≈ 0 ms/Objekt** (an- und abwesend).' },
+    b: { label: 'Verbindungssuche', text: 'Nur die **Kombination** definiert das Ziel → **5–15** (da) bzw. **10–30 ms/Objekt** (nicht da).' },
+    tipp: 'Nicht «Farbe = Merkmalssuche»: Rot kommt auch in Verbindungssuchen vor (rote O).',
+  },
+  {
+    ch: 'aufmerksamkeit',
+    topic: 'Selbstabbrechend vs. erschöpfend',
+    a: { label: 'Visuelle Verbindungssuche', text: '**Selbstabbrechend:** abwesend ≈ **2 ×** anwesend (n vs. n/2 Elemente). (Aufm. F. 29)' },
+    b: { label: 'Sternberg-Gedächtnissuche', text: '**Erschöpfend:** Treffer und Nieten mit **gleicher Steigung**. (Einf. F. 38)' },
+    tipp: 'Die Faustregel «doppelt so steil» gilt nur für serielle, selbstabbrechende Suche – nicht für Merkmalssuche.',
+  },
+  {
+    ch: 'aufmerksamkeit',
+    topic: 'Wolfe et al. (2011): welche Zahlen?',
+    a: { label: 'F. 38 (Hauptergebnis)', text: '**Abwesend 4**, **anwesend 5 ms/Item**.' },
+    b: { label: 'F. 39 (Kontrollanalyse)', text: '**Korrekt abwesend 5**, **Singletons 4**, **alle Treffer 7 ms/Item**.' },
+    tipp: 'Unterschiedlich wegen anderer Teilmengen bzw. Binning.',
+  },
 ];
 
 export const controlQuestions: ControlQuestion[] = [
@@ -398,6 +451,47 @@ export const controlQuestions: ControlQuestion[] = [
     answer: [
       'Bei **Leakage** müsste der Prime auch **ganz ohne Aufmerksamkeit** (sehr kurze Darbietung) wirken.',
       'Priming tritt aber erst **ab 110 ms** auf – genug Zeit, dass die Aufmerksamkeit kurz auf den Prime **rutscht** → Slippage. Ohne Aufmerksamkeit keine semantische Verarbeitung = **moderne Broadbent-Version**. (F. 19–21)',
+    ],
+  },
+  {
+    ch: ['aufmerksamkeit'],
+    q: 'Beschreibe das Spatial-Cueing-Paradigma. Wie werden Gewinne und Kosten bestimmt, und was zeigt das Ergebnis über verdeckte Aufmerksamkeit?',
+    answer: [
+      '**Posner, Nissen & Ogden (1978):** Cue → Delay → Test; Bedingungen **neutral (ca. 50 %)**, **valide (ca. 40 %)**, **invalide (ca. 10 %)**. (F. 22)',
+      '**Gewinn** = schnellere RT bei validem Cue, **Kosten** = langsamere RT bei invalidem Cue, jeweils **relativ zur neutralen Baseline** (ca. 300 / 335 / 370 ms).',
+      'Der Blick bleibt auf dem Fixationspunkt; nur Durchgänge ohne Augenbewegung werden ausgewertet → Aufmerksamkeit lässt sich **verdeckt** auf einen Ort richten. (LB S. 57)',
+    ],
+  },
+  {
+    ch: ['aufmerksamkeit'],
+    q: 'Wie unterscheiden sich periphere und symbolische Cues im Zeitverlauf ihres Nutzens (SOA), und warum?',
+    answer: [
+      '**Peripher (exogen):** Nutzen ab kurz nach 0 ms, Plateau (≈ 20 ms) bei **ca. 150 ms** – zieht die Aufmerksamkeit **automatisch** an.',
+      '**Symbolisch (endogen):** bis ca. **100 ms kein Nutzen**, Plateau erst bei **ca. 300 ms** – muss **interpretiert** und **willentlich** befolgt werden. Danach sind beide gleich wirksam. (F. 23)',
+    ],
+  },
+  {
+    ch: ['aufmerksamkeit'],
+    q: 'Grenze Merkmals- und Verbindungssuche ab und skizziere die typischen RT × Set-Size-Funktionen. Warum ist die Steigung bei abwesendem Ziel etwa doppelt so gross?',
+    answer: [
+      '**Merkmalssuche:** Ziel unterscheidet sich in **einer Dimension** → Pop-out, flach (**≈ 0 ms/Objekt**, ca. 450 ms). **Verbindungssuche:** nur die **Merkmalskombination** definiert das Ziel → RT steigt linear (**5–15** bzw. **10–30 ms/Objekt**). (F. 28–29)',
+      '**Selbstabbrechende Suche:** Mit Ziel werden im Schnitt **n/2**, ohne Ziel **alle n** Elemente geprüft → b_abwesend ≈ 2 · b_anwesend. (F. 29)',
+    ],
+  },
+  {
+    ch: ['aufmerksamkeit'],
+    q: 'Wie erklärt die Merkmals-Integrations-Theorie den Unterschied zwischen Merkmals- und Verbindungssuche?',
+    answer: [
+      'Merkmale werden **parallel** in getrennten **Merkmalskarten** erfasst; **gebunden** werden sie erst durch den **Aufmerksamkeitsfokus auf einem Ort** → temporäre Objektrepräsentation → Wiedererkennungs-Netzwerk. (F. 30)',
+      '**Einzigartiges Merkmal:** Eine Karte verrät das Ziel → Aufmerksamkeit direkt dorthin. **Verbindung:** Keine Karte allein genügt → die Anordnung muss Ort für Ort («zufällig») durchsucht werden. (LB S. 62)',
+    ],
+  },
+  {
+    ch: ['aufmerksamkeit'],
+    q: 'Welche drei Quellen lenken die Suche in realen Szenen, und was zeigen Wolfe et al. (2011) zur Effizienz solcher Suchen?',
+    answer: [
+      '(1) **elementare Merkmale bzw. Verbindungen** (Tomate = rot + rund + gross), (2) **Eigenschaften der Szene**, (3) **Suchverlauf** (Gesuchtes/Gefundenes beschleunigt spätere Suchen). (F. 36–41)',
+      '**Wolfe et al. (2011):** abwesend **4**, anwesend **5 ms/Item** → extrem effizient. Kontrollanalyse: Singletons gleich steil (5/4/7 ms/Item) → liegt **nicht** an mehrfach vorhandenen Zielen. Die Laborsuche erklärt Alltagssuche nicht vollständig. (F. 38–39)',
     ],
   },
   /* ── kapitelübergreifend ── */

@@ -16,6 +16,7 @@ import {
   TreismanRiley,
   V1Karte,
 } from './Widgets3';
+import { CueSort, Cueing, Effizienz, Fit, Soa, Spotlight, SucheSort, VisuelleSuche } from './Widgets4';
 
 export function Widget({ id }: { id: WidgetId }) {
   switch (id) {
@@ -67,6 +68,22 @@ export function Widget({ id }: { id: WidgetId }) {
       return <PerceptualLoad />;
     case 'slippage':
       return <Slippage />;
+    case 'cueing':
+      return <Cueing />;
+    case 'soa':
+      return <Soa />;
+    case 'cue-sort':
+      return <CueSort />;
+    case 'spotlight':
+      return <Spotlight />;
+    case 'visuelle-suche':
+      return <VisuelleSuche />;
+    case 'suche-sort':
+      return <SucheSort />;
+    case 'fit':
+      return <Fit />;
+    case 'effizienz':
+      return <Effizienz />;
   }
 }
 

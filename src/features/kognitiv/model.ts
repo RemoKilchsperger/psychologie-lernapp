@@ -1,5 +1,5 @@
 /**
- * Datenmodell des Lernmoduls Kognitive Psychologie (Vorlesungen 1–4, HS 2026).
+ * Datenmodell des Lernmoduls Kognitive Psychologie (Vorlesungen 1–4 inkl. Aufmerksamkeit Teil 2, HS 2026).
  * Ein Kapitel entspricht einem Kapitel der Zusammenfassung, besteht aus Abschnitten,
  * und jeder Abschnitt aus einer Folge von Inhaltsblöcken.
  *
@@ -28,7 +28,14 @@ export type FigureKey =
   | 'broadbent'
   | 'treisman'
   | 'deutsch'
-  | 'load';
+  | 'load'
+  | 'cueing'
+  | 'soa'
+  | 'merkmale'
+  | 'suchfunktionen'
+  | 'fit'
+  | 'wolfe'
+  | 'wolfe-kontrolle';
 
 export type WidgetId =
   | 'interpretiert'
@@ -54,7 +61,15 @@ export type WidgetId =
   | 'selektion'
   | 'treisman-riley'
   | 'perceptual-load'
-  | 'slippage';
+  | 'slippage'
+  | 'cueing'
+  | 'soa'
+  | 'cue-sort'
+  | 'spotlight'
+  | 'visuelle-suche'
+  | 'suche-sort'
+  | 'fit'
+  | 'effizienz';
 
 export type Tone = 'merke' | 'ergaenzung' | 'notiz' | 'achtung' | 'beispiel' | 'pruefung';
 

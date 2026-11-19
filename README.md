@@ -105,7 +105,7 @@ Im Text: `(S. 13)`, `(Notiz)` = Quellenmarke (Seite im OneNote-Export), `[Ergän
 
 ## Eigene Lernumgebung: Kognitive Psychologie
 
-`custom: 'kognitiv'` im Fach. Quelle: `Kognitive_Psychologie_Gesamt_Zusammenfassung.pdf` (Vorlesungen 1–4, 16 S., 15 Abbildungen).
+`custom: 'kognitiv'` im Fach. Quellen: `Kognitive_Psychologie_Gesamt_Zusammenfassung.pdf` (Vorlesungen 1–4, 16 S., 15 Abbildungen) und `Kognition_Aufmerksamkeit-Teil2_Zusammenfassung.pdf` (6 S., 7 Abbildungen; in Kapitel 4 eingearbeitet).
 Aufbau wie Persönlichkeitspsychologie, nutzt `entwicklung.css` (ew-*), `persoenlichkeit.css` (pk-*) plus `kognitiv.css` (kg-*).
 Prüfung: MC 2 h, A-Typ **1 aus 5** und Kprim.
 
@@ -113,12 +113,12 @@ Prüfung: MC 2 h, A-Typ **1 aus 5** und Kprim.
 src/features/kognitiv/
   KognitivApp.tsx            Tabs: Übersicht · Kapitel · Karteikarten · Stolperfallen · Kontrollfragen · Quiz
   model.ts                   Datenmodell (4 Kapitel, Blöcke, A-Typ- und Kprim-Fragen)
-  figures.ts + img/          alle 15 Abbildungen aus der Zusammenfassung
-  content/kap1…kap4-*.ts     Einführung · Wahrnehmung · Mentale Vorstellungen · Aufmerksamkeit (Teil 1)
+  figures.ts + img/          alle 22 Abbildungen aus den Zusammenfassungen (Abb. 16–22 = Aufmerksamkeit Teil 2)
+  content/kap1…kap4-*.ts     Einführung · Wahrnehmung · Mentale Vorstellungen · Aufmerksamkeit (Teil 1 und 2)
   content/extras.ts          Schlüsselzahlen, Stolperfallen, Kontrollfragen
-  content/quiz.ts            101 MC-Fragen (A-Typ mit 5 Optionen + Kprim)
-  components/Widgets*.tsx    24 interaktive Grafiken (Stroop- und Rotations-Selbstversuch, Donders, Sternberg,
-                             Sehbahn, rezeptive Felder, Gestalt, SDT/ROC, Scanning, V1, Filtermodelle, Perceptual Load …)
+  content/quiz.ts            128 MC-Fragen (A-Typ mit 5 Optionen + Kprim)
+  components/Widgets*.tsx    32 interaktive Grafiken (Stroop-, Rotations-, Cueing- und Suche-Selbstversuch, Donders, Sternberg,
+                             Sehbahn, rezeptive Felder, Gestalt, SDT/ROC, Scanning, V1, Filtermodelle, Perceptual Load, FIT …)
 ```
 
 Im Text: `(F. 32)`, `(LB S. 7)` = Quellenmarke, `[Web]` = blaue Marke (Internetquelle der Notizen), `[Ergänzung]` = gelbe Marke.

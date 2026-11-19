@@ -18,10 +18,10 @@ export const glossary: (Def & { ch: ChapterId; section: string })[] = chapters.f
 export const EXAM_INFO = {
   course: 'Kognitive Psychologie',
   module: 'HS 2026 · Prof. Dr. Ester Reijnen',
-  period: 'Zusammenfassung der Vorlesungen 1–4: Einführung · Wahrnehmung · Mentale Vorstellungen · Aufmerksamkeit (Teil 1)',
+  period: 'Zusammenfassungen der Vorlesungen 1–4: Einführung · Wahrnehmung · Mentale Vorstellungen · Aufmerksamkeit (Teil 1 und 2)',
   format: 'Multiple Choice, 2 h; Typ A (1 aus 5; 1/0 Punkte) und Kprim (4 Aussagen richtig/falsch; 1, ½ oder 0 Punkte)',
   relevant:
-    'Stoff: Vorlesung inkl. Folien + Lehrbuch Anderson (2013) Kap. 1, 2, 3, 4, 6, 7. Kein Ersatztermin, Nachprüfung i. d. R. mündlich. Bei Abweichungen Folie ↔ Lehrbuch gilt die Folie. Lücken der Unterlagen: Wahrnehmung F. 47–49 und 80–84 fehlen; Aufmerksamkeit nur Teil 1 (F. 1–21).',
+    'Stoff: Vorlesung inkl. Folien + Lehrbuch Anderson (2013) Kap. 1, 2, 3, 4, 6, 7. Kein Ersatztermin, Nachprüfung i. d. R. mündlich. Bei Abweichungen Folie ↔ Lehrbuch gilt die Folie. Lücken der Unterlagen: Wahrnehmung F. 47–49 und 80–84 fehlen; Aufmerksamkeit F. 31–35 (Exkurs Bindungsproblem), 40 und 42 nicht behandelt.',
   sources:
     '(F. x) = Folie x des jeweiligen Kapitels · (LB S. x) = Seite im Lehrbuch Anderson · «Web» = Ergänzung aus einer Internetquelle der Notizen · «Ergänzung» = nur zum Verständnis, nicht aus den Unterlagen.',
 };

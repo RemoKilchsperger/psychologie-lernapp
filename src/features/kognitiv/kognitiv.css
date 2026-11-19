@@ -200,6 +200,51 @@
 .kg-load-group { padding: 6px 8px; border-radius: 8px; border: 1px solid transparent; }
 .kg-load-group.on { border-color: var(--ch); background: color-mix(in srgb, var(--ch) 6%, var(--surface)); }
 
+/* ── Aufmerksamkeit Teil 2 ── */
+/* Spatial Cueing */
+.kg-cue-stage { width: 100%; max-width: 460px; border-radius: 12px; background: #f4f4f5; cursor: pointer; touch-action: manipulation; user-select: none; }
+.kg-cue-stage svg { display: block; width: 100%; }
+.kg-cue-box { fill: none; stroke: #3f3f46; stroke-width: 2.5; }
+.kg-cue-sym { font-size: 34px; font-weight: 700; text-anchor: middle; fill: #18181b; }
+.kg-cue-fixdot { fill: #52525b; }
+.kg-cue-target { fill: #18181b; }
+.kg-cue-warn { font-size: 11px; text-anchor: middle; fill: #b91c1c; font-weight: 600; }
+/* Spotlight */
+.kg-spot { max-width: 520px; cursor: crosshair; }
+.kg-spot-light { fill: rgb(250 204 21 / 0.28); stroke: #facc15; stroke-width: 1.5; }
+.kg-spot-light.glide { transition: transform 0.6s ease-in-out, r 0.2s; }
+.kg-spot-l { font-family: ui-monospace, Consolas, monospace; font-size: 20px; font-weight: 600; text-anchor: middle; fill: #52525b; transition: fill 0.2s; pointer-events: none; }
+.kg-spot-l.on { fill: #fff; }
+/* Visuelle Suche */
+.kg-search-stage { width: 100%; max-width: 460px; border-radius: 12px; background: #f4f4f5; }
+.kg-search-stage svg { display: block; width: 100%; }
+.kg-search-l { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 24px; font-weight: 800; text-anchor: middle; }
+.kg-search-fix { font-size: 26px; text-anchor: middle; fill: #71717a; }
+.kg-search-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; width: 100%; max-width: 460px; }
+.kg-ref-line { stroke-width: 1.6; opacity: 0.45; }
+.kg-slope-table { border-collapse: collapse; font-size: 0.85rem; margin: 4px 0 6px; }
+.kg-slope-table th, .kg-slope-table td { padding: 3px 10px 3px 0; text-align: left; font-variant-numeric: tabular-nums; }
+.kg-slope-table thead th { color: var(--muted); font-weight: 600; font-size: 0.78rem; }
+/* FIT */
+.kg-fit { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 12px; margin: 10px 0; align-items: start; }
+.kg-fit-display, .kg-fit-map { display: grid; gap: 2px; text-align: center; font-size: 0.78rem; color: var(--muted); }
+.kg-fit-maps { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.kg-fit-mapbg { fill: var(--bg); stroke: var(--border); stroke-width: 1.2; }
+.kg-fit-slot { fill: var(--surface); stroke: var(--border); stroke-width: 1; }
+.kg-fit-slot.seen { fill: color-mix(in srgb, var(--muted) 18%, var(--surface)); }
+.kg-fit-act { opacity: 0.45; transition: opacity 0.2s; }
+.kg-fit-act.on { opacity: 1; }
+.kg-fit-ring { fill: none; stroke: var(--ch); stroke-width: 3; stroke-dasharray: 5 3; pointer-events: none; }
+/* Effizienz */
+.kg-eff-row { cursor: pointer; border-radius: 6px; padding: 2px 4px; }
+.kg-eff-row.on { background: color-mix(in srgb, var(--ch) 10%, transparent); }
+.kg-eff-track { position: relative; }
+.kg-eff-range { position: absolute; top: 0; bottom: 0; border-radius: 4px; }
+@media (prefers-reduced-motion: reduce) { .kg-spot-light.glide { transition: none; } }
+@media (max-width: 640px) {
+  .kg-fit { grid-template-columns: minmax(0, 1fr); }
+}
+
 /* ───── Responsiv ───── */
 @media (max-width: 760px) {
   .kg-split-wide { grid-template-columns: minmax(0, 1fr); }
