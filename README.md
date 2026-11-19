@@ -48,17 +48,18 @@ einen `block` oder mehrere `parts` (Unterteile mit je eigenem Block) sowie optio
 ## Eigene Lernumgebung: Entwicklungspsychologie
 
 Entwicklungspsychologie hat statt der Standard-Fachseite eine eigene Lernumgebung (`custom: 'entwicklung'` im Fach).
-Quelle: `Entwicklungspsychologie_Kindes-und-Jugendalter_Zusammenfassung.pdf` (inkl. der 10 Abbildungen).
+Quellen: `Entwicklungspsychologie_Kindes-und-Jugendalter_Zusammenfassung.pdf` (Kap. 1–6, Abb. 1–10) und
+`Entwicklungspsychologie_Bindung_Zusammenfassung.pdf` (Kap. 7 «Bindung», eigener Foliensatz Fol. 1–24, Abb. 11–12).
 
 ```
 src/features/entwicklung/
   EntwicklungApp.tsx         Tabs: Übersicht · Kapitel · Karteikarten · Stolperfallen · Kontrollfragen · Quiz
   model.ts                   Datenmodell (Kapitel → Abschnitte → Blöcke)
   figures.ts + img/          Abbildungen aus der Zusammenfassung
-  content/kap1…kap6-*.ts     ein Kapitel pro Vorlesung
+  content/kap1…kap7-*.ts     ein Kapitel pro Vorlesung bzw. Foliensatz
   content/extras.ts          Altersachse, Stolperfallen, Kontrollfragen
   content/quiz.ts            MC-Fragen (mit Kapitel-Zuordnung)
-  components/                Blöcke, interaktive Widgets, Quiz, Karteikarten …
+  components/                Blöcke, interaktive Widgets (Bindung: WidgetsBindung.tsx), Quiz, Karteikarten …
 ```
 
 Im Text: `**fett**` = Fachbegriff, `(Fol. 3)`, `(LB S. 55)`, `(Notiz)` werden als Quellenmarke dargestellt.

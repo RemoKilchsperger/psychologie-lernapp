@@ -67,7 +67,7 @@ export function Overview({ readKey, onOpen, onTab }: { readKey: (id: ChapterId) 
       </section>
 
       <section>
-        <h3 className="ew-h">Die sechs Vorlesungen</h3>
+        <h3 className="ew-h">Die {chapters.length} Kapitel</h3>
         <div className="ew-chgrid">
           {chapters.map((c) => {
             const qs = quiz.filter((q) => q.ch === c.id);
@@ -78,7 +78,7 @@ export function Overview({ readKey, onOpen, onTab }: { readKey: (id: ChapterId) 
                 <div className="ew-chcard-top">
                   <span className="ew-nr">{c.nr}</span>
                   <span className="muted small">
-                    {c.date} · {c.folien}
+                    {c.date ? `${c.date} · ` : ''}{c.folien}
                   </span>
                   {read && <span className="ew-done">✓ gelernt</span>}
                 </div>
@@ -107,7 +107,7 @@ export function Overview({ readKey, onOpen, onTab }: { readKey: (id: ChapterId) 
       <section>
         <h3 className="ew-h">Entwicklung auf der Altersachse</h3>
         <p className="muted small">
-          Alle Altersangaben aus den sechs Vorlesungen auf einer Achse – zum Verknüpfen über die Kapitel hinweg. Filtere nach Kapitel. Achtung: Bei der Motorik
+          Alle Altersangaben aus allen Kapiteln auf einer Achse – zum Verknüpfen über die Kapitel hinweg. Filtere nach Kapitel. Achtung: Bei der Motorik
           werden keine genauen Alter geprüft.
         </p>
         <div className="ew-chiprow ew-filter">

@@ -11,6 +11,7 @@ const TONE_LABEL: Record<Tone, string> = {
   achtung: 'Verwechslungsgefahr',
   beispiel: 'Beispiel',
   pruefung: 'Prüfungshinweis',
+  web: 'Ergänzung (Internet, nicht aus Folien/Lehrbuch)',
 };
 const TONE_ICON: Record<Tone, string> = {
   merke: '★',
@@ -19,6 +20,7 @@ const TONE_ICON: Record<Tone, string> = {
   achtung: '⚠',
   beispiel: '💡',
   pruefung: '🎯',
+  web: '🌐',
 };
 
 export function BlockView({ block }: { block: Block }) {

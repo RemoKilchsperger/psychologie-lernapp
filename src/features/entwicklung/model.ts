@@ -8,7 +8,7 @@
  *   (Fol. 3), (LB S. 55), (Notiz) → werden als kleine Quellen-Marke dargestellt
  */
 
-export type ChapterId = 'einfuehrung' | 'physisch' | 'lernen' | 'motorik' | 'piaget' | 'kognition2';
+export type ChapterId = 'einfuehrung' | 'physisch' | 'lernen' | 'motorik' | 'piaget' | 'kognition2' | 'bindung';
 
 export type FigureKey =
   | 'konvergenzmodell'
@@ -20,7 +20,9 @@ export type FigureKey =
   | 'wauwau'
   | 'erhaltung'
   | 'karotte'
-  | 'sallyanne';
+  | 'sallyanne'
+  | 'fuersorge'
+  | 'waage';
 
 export type WidgetId =
   | 'bronfenbrenner'
@@ -31,9 +33,13 @@ export type WidgetId =
   | 'aktivierung'
   | 'verstaerkung'
   | 'piaget-stufen'
-  | 'sally-anne';
+  | 'sally-anne'
+  | 'bowlby-phasen'
+  | 'fremde-situation'
+  | 'bindungstypen'
+  | 'vandenboom';
 
-export type Tone = 'merke' | 'ergaenzung' | 'notiz' | 'achtung' | 'beispiel' | 'pruefung';
+export type Tone = 'merke' | 'ergaenzung' | 'notiz' | 'achtung' | 'beispiel' | 'pruefung' | 'web';
 
 export type Block =
   | { t: 'p'; text: string }

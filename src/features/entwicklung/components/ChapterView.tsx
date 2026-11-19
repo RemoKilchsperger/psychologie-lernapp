@@ -43,7 +43,7 @@ export function ChapterView({
         <div className="ew-ch-badge">{chapter.nr}</div>
         <div>
           <div className="ew-eyebrow">
-            Vorlesung {chapter.date} · {chapter.folien}
+            {chapter.date ? `Vorlesung ${chapter.date} · ` : ''}{chapter.folien}
           </div>
           <h2>{chapter.title}</h2>
           <p className="ew-lohaus">

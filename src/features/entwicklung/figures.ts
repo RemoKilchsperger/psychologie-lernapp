@@ -9,6 +9,8 @@ import wauwau from './img/schema-wauwau.png';
 import erhaltung from './img/erhaltungsaufgaben.png';
 import karotte from './img/karottenversuch.png';
 import sallyanne from './img/sally-anne.png';
+import fuersorge from './img/bindung-fuersorge.png';
+import waage from './img/bindung-waage.png';
 
 export interface Figure {
   nr: number;
@@ -92,5 +94,19 @@ export const figures: Record<FigureKey, Figure> = {
     caption: 'Sally legt den Ball in den Korb und geht. Anne legt ihn in die Schachtel. «Wo sucht Sally den Ball?»',
     source: 'Fol. 53',
     narrow: true,
+  },
+  fuersorge: {
+    nr: 11,
+    src: fuersorge,
+    title: 'Bindungs- und Fürsorgesystem',
+    caption: 'Bedrohung der Sicherheit aktiviert das Bindungssystem (Weinen, Anklammern, Nachkrabbeln). Dieses Bindungsverhalten aktiviert das Fürsorgesystem der Bezugsperson (Aufnehmen, Wiegen, Singen). Gleiches Ziel: Nähe und Sicherheit des Kindes.',
+    source: 'Bindung Fol. 3',
+  },
+  waage: {
+    nr: 12,
+    src: waage,
+    title: 'Bindung als Balance zwischen Bindungs- und Explorationsverhalten',
+    caption: 'Links B-Typ (ausgeglichen), Mitte A-Typ (zur Exploration verschoben), rechts C-Typ (zum Bindungsverhalten verschoben). Die angehobene Seite mit Pfeil zeigt jeweils, welches Verhalten überwiegt.',
+    source: 'Bindung Fol. 14–16; nach Gloger-Tippelt 2004',
   },
 };

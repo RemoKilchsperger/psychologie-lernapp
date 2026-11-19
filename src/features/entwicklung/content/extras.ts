@@ -23,6 +23,7 @@ export const ageBands: AgeBand[] = [
       { age: 'Geburt', text: 'Präferenz für Mutterstimme, Muttersprache, Kontraste; Grössenkonstanz; intermodale Wahrnehmung', ch: 'motorik' },
       { age: '2 Wochen', text: 'Imitation: Zunge herausstrecken', ch: 'lernen' },
       { age: 'erste 7 Tage', text: 'Höchstes Sterberisiko im 1. Lebensjahr', ch: 'physisch' },
+      { age: '0–6 Wo.', text: 'Bowlby Phase 1: Bindungsverhalten an jede Person; reflektorisches Lächeln (1. Monat)', ch: 'bindung' },
     ],
   },
   {
@@ -30,6 +31,8 @@ export const ageBands: AgeBand[] = [
     span: '1–6 Monate',
     items: [
       { age: 'Wo. 5–6', text: 'Höhepunkt der Schreidauer, danach Abnahme', ch: 'physisch' },
+      { age: 'ab Wo. 6', text: 'Soziales Lächeln (Lohaus: 6.–10. Woche); Bowlby Phase 2: entstehende Bindung', ch: 'bindung' },
+      { age: '3.–6. Mon.', text: 'Vorübergehender Rückgang der Imitation (kortikale Reorganisation)', ch: 'bindung' },
       { age: '0;2', text: 'Lächeln Menschen- mehr als Puppengesichter an (belebt/unbelebt)', ch: 'kognition2' },
       { age: '0;2–0;3', text: 'Gesichterpräferenz', ch: 'motorik' },
       { age: '0;3', text: 'Präferenz eigener Ethnie; Gesichter aller Ethnien noch unterscheidbar', ch: 'motorik' },
@@ -43,6 +46,7 @@ export const ageBands: AgeBand[] = [
     span: '6–12 Monate',
     items: [
       { age: '0;6–0;9', text: 'Verzögerte Nachahmung nach 24 h', ch: 'lernen' },
+      { age: '0;6–0;8', text: 'Bowlby Phase 3: ausgeprägte Bindung – Trennungsprotest, Fremdeln, aktives Bindungsverhalten', ch: 'bindung' },
       { age: '0;7', text: 'Einfache kausale Zusammenhänge; nur Lebewesen bewegen sich selbst', ch: 'kognition2' },
       { age: '0;8', text: 'Soziales Referenzieren; Unterscheidung vertraut/unvertraut', ch: 'kognition2' },
       { age: '0;9', text: 'Perceptual narrowing: Affengesichter / andere Ethnien nicht mehr unterschieden', ch: 'motorik' },
@@ -54,6 +58,9 @@ export const ageBands: AgeBand[] = [
     span: '1–2 Jahre',
     items: [
       { age: '1;0', text: 'Schwerkraft: Proportion und Form des aufliegenden Objekts werden beachtet', ch: 'kognition2' },
+      { age: '12–18 Mon.', text: 'Fremde-Situations-Test (Bindungsqualität A/B/C/D)', ch: 'bindung' },
+      { age: '2. Lj.', text: 'Höhepunkt des Fremdelns, danach Abnahme', ch: 'bindung' },
+      { age: '1;6–2;0', text: 'Bowlby Phase 4: reziproke Beziehungen, inneres Arbeitsmodell', ch: 'bindung' },
       { age: '12–18 Mon.', text: 'Hilfeverhalten; 1–2 neue Verhaltensweisen pro Tag durch Imitation', ch: 'lernen' },
       { age: '1;1', text: 'Analogien: Lösungsstrategien übertragen', ch: 'kognition2' },
       { age: '1;3', text: 'Imitation von Handlungen aus dem Fernsehen; mehrstufige Kausalketten', ch: 'lernen' },
@@ -180,6 +187,48 @@ export const pitfalls: Pitfall[] = [
     b: { label: 'Theory of Mind', text: 'Klassisch **3–5 J.**, mit vereinfachten Aufgaben schon mit **2½ J.**' },
     tipp: 'Bei ToM die Spanne und die Aufgabenschwierigkeit kennen.',
   },
+  {
+    ch: 'bindung',
+    topic: 'Bindungsverhalten ≠ Bindung',
+    a: { label: 'Bindungsverhalten', text: 'Angeboren, **ab Geburt**, anfangs an **jede Person** gerichtet (Weinen, Lächeln).' },
+    b: { label: 'Bindung', text: '**Emotionales Band** an eine bestimmte Person – entsteht erst **später** (Phase 3).' },
+    tipp: 'Ein Neugeborenes zeigt Bindungsverhalten, hat aber noch keine Bindung.',
+  },
+  {
+    ch: 'bindung',
+    topic: 'Waage: A vs. C',
+    a: { label: 'A – vermeidend', text: 'Übergewicht **Exploration**; bei Rückkehr keine Reaktion – aber **erhöhtes Kortisol**.' },
+    b: { label: 'C – ambivalent', text: 'Übergewicht **Bindungsverhalten**; bei Rückkehr **wütend, kaum zu trösten**.' },
+    tipp: 'A wie «Abwenden», C wie «Clinging» (Klammern). Buchstaben nicht nach Häufigkeit: B ist das häufigste Muster.',
+  },
+  {
+    ch: 'bindung',
+    topic: 'Bowlby Phase 4',
+    a: { label: 'Folie', text: '«Phase **reziproker Beziehungen**» – inneres Arbeitsmodell **entsteht**.' },
+    b: { label: 'Lohaus', text: '«Phase der **zielkorrigierten Partnerschaft**» – Arbeitsmodell wird **gefestigt**.' },
+    tipp: 'Gleiche Phase, zwei Namen – für die Prüfung gilt die Folienvariante.',
+  },
+  {
+    ch: 'bindung',
+    topic: 'Lächeln',
+    a: { label: 'Nichtsoziales Lächeln', text: '**1. Monat**, reflektorisch/endogen, nicht personenbezogen.' },
+    b: { label: 'Soziales Lächeln', text: 'Ab **6. Woche** (Folie) bzw. 6.–10. Woche (Lohaus), personenbezogen.' },
+    tipp: 'Erst ab dem sozialen Lächeln reagiert das Baby auf Personen.',
+  },
+  {
+    ch: 'bindung',
+    topic: 'Weinen beantworten?',
+    a: { label: 'Bindungstheorie', text: '**Prompt** und angemessen reagieren → Sicherheit → langfristig weniger Weinen.' },
+    b: { label: 'Lerntheorie', text: 'Zuwendung = **Verstärker** → mehr Weinen; intermittierend verstärkt = besonders stabil.' },
+    tipp: 'Feinfühligkeit = wahrnehmen, interpretieren, angemessen, prompt – plus Konsistenz.',
+  },
+  {
+    ch: 'bindung',
+    topic: 'Wie viele Bezugspersonen?',
+    a: { label: 'Monotropie (Bowlby)', text: 'Bindung an **eine** Person (meist Mutter) – **widerlegt**.' },
+    b: { label: 'Multiple Bindung', text: 'Bindungen an **mehrere** Personen, Muster können sich unterscheiden; Kompensation möglich.' },
+    tipp: 'Monotropie stammt von Bowlby, ist aber nicht der aktuelle Stand.',
+  },
 ];
 
 /** Offene Kontrollfragen aus der Zusammenfassung mit Musterantworten. */
@@ -224,6 +273,49 @@ export const controlQuestions: ControlQuestion[] = [
     answer: [
       'Das Kind ist in der **präoperationalen Stufe** (2–6 J.): **fehlendes Konzept der Erhaltung (Invarianz)**, **Zentrierung** auf eine Dimension (Höhe), statisches Denken und – laut Lohaus – fehlendes **reversibles Denken**.',
       'Kritik: Piaget **unterschätzt** kindliche Kompetenzen. ToM-Aufgaben werden klassisch zwischen 3 und 5 J. gelöst, mit **vereinfachten Anforderungen** (eingeübte Fragen, geringe Inhibition, keine sprachliche Antwort) schon mit **2½ J.** (Setoh, Scott & Baillargeon, 2016). Auch die Perspektivenübernahme gelingt mit einer leichteren Aufgabe (Bilderbuch) schon 3- bis 4-Jährigen – die Leistung hängt stark von der Aufgabenschwierigkeit ab.',
+    ],
+  },
+  {
+    ch: ['bindung'],
+    q: 'Wie hängen Bindungs- und Fürsorgesystem zusammen, und welches gemeinsame Ziel verfolgen sie?',
+    answer: [
+      'Beide sind **komplementäre, evolutionsbiologisch angelegte Verhaltenssysteme**. Das **Bindungssystem** des Kindes wird durch eine **Bedrohung der Sicherheit** aktiviert und zeigt sich im Bindungsverhalten (Weinen, Anklammern, Nachkrabbeln).',
+      'Dieses Bindungsverhalten **aktiviert das Fürsorgesystem** der Bezugsperson (Aufnehmen, Wiegen, Singen). Ist Schutz erreicht, wird das Bindungssystem wieder deaktiviert.',
+      'Gemeinsames Ziel: **Nähe und Sicherheit des Kindes** (anfangs räumliche Nähe, später emotional-psychische Sicherheit).',
+    ],
+  },
+  {
+    ch: ['bindung'],
+    q: 'Nenne die vier Komponenten der Feinfühligkeit und erkläre, warum eine prompte Reaktion wichtig ist.',
+    answer: [
+      'Die Bezugsperson muss die Signale des Kindes in **konsistenter** Weise (1) **wahrnehmen**, (2) **richtig interpretieren**, (3) **angemessen** und (4) **prompt** beantworten (Ainsworth).',
+      '**Prompt**, weil der Säugling wegen seiner kurzen Gedächtnisspanne nur eine **zeitnahe** Reaktion als Folge seines eigenen Verhaltens erlebt. So erfährt er Kontrolle über die Umwelt, Sicherheit und Vertrauen.',
+    ],
+  },
+  {
+    ch: ['bindung', 'piaget'],
+    q: 'Beschreibe die vier Phasen nach Bowlby mit Altersangaben. Welche kognitiven Voraussetzungen braucht die spezifische Bindung?',
+    answer: [
+      '**1. Vorphase** (Geburt – 6 Wo.): Bindungsverhalten an jede Person. **2. Entstehende Bindung** (6 Wo. – 6/8 Mon.): spezifische Reaktionen auf vertraute Personen. **3. Ausgeprägte Bindung** (6/8 Mon. – 1½/2 J.): aktive Kontaktaufnahme, Trennungsprotest, Fremdeln. **4. Reziproke Beziehungen** (ab 1½–2 J.): inneres Arbeitsmodell, Trennungen werden akzeptiert (Lohaus: zielkorrigierte Partnerschaft).',
+      'Voraussetzungen: **Objektpermanenz** (die Bezugsperson existiert weiter, auch wenn sie weg ist – Piaget, sensumotorische Stufe) und **Schemata**, um vertraute von fremden Personen zu unterscheiden.',
+    ],
+  },
+  {
+    ch: ['bindung'],
+    q: 'Wie verhält sich ein unsicher-vermeidendes im Vergleich zu einem unsicher-ambivalenten Kind bei der Wiedervereinigung im Fremde-Situations-Test, und wie erklärt man die Entstehung?',
+    answer: [
+      '**A – vermeidend:** keine spezifische Reaktion bzw. aktives Meiden der Nähe; wirkt unbeteiligt, ist aber gestresst (**erhöhtes Kortisol**). Entstehung: zu wenig Zuverlässigkeit, evtl. **Zurückweisung** → das Kind zeigt aus Angst vor Zurückweisung weniger Bindungsverhalten.',
+      '**C – ambivalent:** sucht Nähe, ist aber **ärgerlich/wütend** und **kaum zu trösten**. Entstehung: **Wechsel** zwischen zuverlässiger und unzuverlässiger Zuwendung → das Kind klammert, kann die Bezugsperson aber nicht zur Emotionsregulation nutzen.',
+      'Auf der Waage: A = Übergewicht Exploration, C = Übergewicht Bindungsverhalten.',
+    ],
+  },
+  {
+    ch: ['bindung', 'einfuehrung'],
+    q: 'Was zeigt die Studie von van den Boom (1994), und warum ist ihr Design dafür besser geeignet als eine Korrelationsstudie?',
+    answer: [
+      '100 Mütter **irritabler** Babys wurden **randomisiert** einer Experimentalgruppe (Feinfühligkeitstraining ab 0;6) oder einer Kontrollgruppe zugeteilt. Mit 1;0 waren in der EG **62 %** sicher gebunden, in der KG **28 %**; die EG-Kinder explorierten mehr und weinten weniger.',
+      'Weil die Feinfühligkeit **experimentell verändert** und zufällig zugeteilt wurde, ist ein **kausaler** Schluss möglich. Eine Korrelation liesse offen, ob z. B. das Temperament des Kindes sowohl Feinfühligkeit als auch Bindung beeinflusst (Drittvariable, umgekehrte Wirkrichtung).',
+      'Zudem zeigt die Studie: Ein schwieriges Temperament führt **nicht zwangsläufig** zu unsicherer Bindung.',
     ],
   },
 ];

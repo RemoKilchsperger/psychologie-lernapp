@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import type { WidgetId } from '../model';
 import { FigureView } from './Blocks';
 import { Rich } from './Rich';
+import { Bindungstypen, BowlbyPhasen, FremdeSituation } from './WidgetsBindung';
 
 export function Widget({ id }: { id: WidgetId }) {
   switch (id) {
@@ -52,6 +53,26 @@ export function Widget({ id }: { id: WidgetId }) {
       return <PiagetStufen />;
     case 'sally-anne':
       return <SallyAnne />;
+    case 'bowlby-phasen':
+      return <BowlbyPhasen />;
+    case 'fremde-situation':
+      return <FremdeSituation />;
+    case 'bindungstypen':
+      return <Bindungstypen />;
+    case 'vandenboom':
+      return (
+        <BarList
+          title="Sicher gebunden mit 1;0 (Fremde Situation)"
+          source="Fol. 20"
+          unit=" %"
+          max={100}
+          rows={[
+            { label: 'Experimentalgruppe (Training)', value: 62 },
+            { label: 'Kontrollgruppe', value: 28 },
+          ]}
+          note="Gleiche Ausgangslage (irritable Babys, randomisiert) – der Unterschied geht auf das Feinfühligkeitstraining zurück."
+        />
+      );
   }
 }
 
